@@ -1,0 +1,37 @@
+#footer{
+    padding: 70px 0 0 0;
+    color: $white;
+    h1, h2, h3, h4, h5, h6, p, a{
+        color: $white;
+    }
+    p{
+        font-size: 0.8rem !important;
+    }
+    .title-footer{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .border-top {
+        border-top: 1px solid #826a6173 !important;
+    }
+    .menu-item {
+        font-size: 0.9rem;
+        border-bottom: 1px solid #826a6173;
+    }
+    .contenedor-icon{
+        border-radius: 0;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i{
+            font-size: 1.4rem;
+        }
+    }
+}
+.conte_copy a {
+    color: lighten($color: $color_principal, $amount: 20%) !important;
+}

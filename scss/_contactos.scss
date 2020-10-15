@@ -1,0 +1,109 @@
+
+.icono_contac{
+    color: #A01127;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.nav_list{
+    ul{
+        margin-left: -14%;
+        @include media-breakpoint-up(lg){
+            margin-left: -10%;
+          }
+          @include media-breakpoint-up(xl){
+            margin-left: -8%;
+          }
+       li{
+        display: inline-block;
+        padding: 10px 0;
+        font-size: 17px;
+       }
+    }
+    .form_contac{
+        a{
+            color: #201815;
+            font-size: 14px;
+            @include media-breakpoint-up(sm){
+                font-size: 17px;
+              }
+            @include media-breakpoint-up(md){
+                font-size: 17px;
+              }
+         } 
+        a:hover{
+            color: #A01127;
+        }
+    }
+    .redes_socales{
+        margin-left: 17%;
+        margin-top: -2%;
+        margin-bottom: 8%;
+        @include media-breakpoint-up(md){
+        margin-left: 0%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+          }
+    }
+}
+.container_img{
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+.contenedor_conta{
+    margin-top: 6%;
+}
+
+.formulario{
+    left: 2%;
+    margin-top: 44%;
+    @include media-breakpoint-up(md){
+        margin-top: 0%;
+      }
+    .titulo_formulario{
+        margin-left: 4%;
+    }
+    button{
+        background-color: #201815;
+         padding: 6px;
+    }
+    textarea{
+        width: 90%;
+        @include media-breakpoint-up(lg){
+            width: 93%;
+          }
+    }
+    label{
+        a{
+            color: #A01127;
+        }
+    }
+    
+}
+
+.mapa{
+    col{
+        padding-right: 0px;
+    }
+    h2{
+        margin-bottom: 5%
+    }
+    iframe{
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+    }
+    .cot_mapa{
+        height: 120%;
+        @include media-breakpoint-up(md){
+            height: 86%;
+          }
+        
+    }
+    .form-group{
+        margin-right: -12%;
+    }
+}
+.politica{
+    text-align: justify;
+}

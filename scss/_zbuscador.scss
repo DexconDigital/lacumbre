@@ -1,0 +1,87 @@
+.buscador {
+  /* Reset Select */
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: lighten($color_complemento, $amount: 17%);
+    background-image: none;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select */
+  .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 2.8em;
+    line-height: 3;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 0 !important;
+  }
+  select {
+    flex: 1;
+    padding: 0 0.5em;
+    color: #fff !important;
+    cursor: pointer;
+    border-radius: 0 !important;
+    outline-color: $color_complemento !important;
+  }
+  .select:focus {
+    outline-color: $color_complemento !important;
+  }
+  /* Arrow */
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: lighten($color_complemento, $amount: 17%);
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: 0.25s all ease;
+    -o-transition: 0.25s all ease;
+    transition: 0.25s all ease;
+    border-radius: 0;
+  }
+  //   /* Transition */
+  //   .select:hover::after {
+  //     color: #f39c12;
+  //   }
+
+  .form-control {
+    height: 2.8em !important;
+    background: lighten($color_complemento, $amount: 17%);
+    border: none;
+    color: #fff !important;
+  }
+  .form-control:focus {
+    color: #fff !important;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #fff;
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+  }
+
+  :-ms-input-placeholder {
+    color: #fff;
+  }
+}

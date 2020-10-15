@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'HermeneusOne';
+    src: local('HermeneusOne'),
+    url(../../fonts/HermeneusOne-Regular.ttf);
+    font-weight: 900;
+}   
+
+$fuente-titulo: 'hermeneusOne';
+
+h1, h2, h3, h4{
+    font-family: $fuente-titulo;
+}

@@ -1,0 +1,40 @@
+.alto_img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.property .property-image{
+    height: 205px;
+    overflow: hidden;
+    width: 100%;
+}
+.property{
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.property .overlay{
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    bottom: -57px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.titulo_similares{
+    background: #a01127;
+    padding: 15px;
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 2%;
+}
+.property-single-detail-title{
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 11px;
+    margin-bottom: 30px;
+}

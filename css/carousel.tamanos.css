@@ -1,0 +1,89 @@
+/* //estilos Carrousel */
+#slide-detalle{
+    height: auto;
+    text-align: center;
+    background: rgba(0,0,0,1);
+    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(133,121,133,1) 46%, rgba(209,209,209,1) 95%, rgba(254,254,254,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(46%, rgba(133,121,133,1)), color-stop(95%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(133,121,133,1) 46%, rgba(209,209,209,1) 95%, rgba(254,254,254,1) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(133,121,133,1) 46%, rgba(209,209,209,1) 95%, rgba(254,254,254,1) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(133,121,133,1) 46%, rgba(209,209,209,1) 95%, rgba(254,254,254,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(133,121,133,1) 46%, rgba(209,209,209,1) 95%, rgba(254,254,254,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#fefefe', GradientType=0 );
+}
+.slick-list.draggable, .slick-track{
+    height: inherit !important;
+}
+#slide-detalle .contenedor-img{
+    height: 199px;
+}
+#slide-detalle img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    margin: auto !important;
+}
+.carousel-item img{
+    height: 100%;
+}
+#miniaturas{
+    height: 70px;
+}
+#miniaturas .contenedor-img, #miniaturas .contenedor-img img{
+    height: inherit !important;
+}
+#miniaturas img{
+    margin-left: 5px;
+    margin-top:5px;
+}
+.slick-prev{
+    left: 2% !important;
+    z-index: 10;
+}
+.slick-next{
+    right: 2% !important;
+    z-index: 10;
+}
+#miniaturas .slick-prev, #miniaturas .slick-next{
+    display: none !important;
+}
+@media (min-width: 576px) {
+    #slide-detalle .contenedor-img{
+        height: 230px;
+    }
+    #miniaturas{
+        height: 75px;
+    }
+}
+@media (min-width: 768px) {
+    #slide-detalle .contenedor-img{
+        height: 365px;
+    }
+    #miniaturas{
+        height: 80px;
+    }
+}
+@media (min-width: 992px) {
+    #slide-detalle .contenedor-img{
+        height: 385px;
+    }
+    #miniaturas{
+        height: 85px;
+    }
+}
+@media (min-width: 1200px) {
+    #slide-detalle .contenedor-img{
+        height: 400px;
+    }
+    #miniaturas{
+        height: 90px;
+    }
+}
+@media (min-width: 1600px) {
+    #slide-detalle .contenedor-img{
+        height: 500px;
+    }
+    #miniaturas{
+        height: 95px;
+    }
+}

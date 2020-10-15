@@ -1,0 +1,14 @@
+$color_boton_subir: #f4f;
+
+.subir{
+    display: none;
+    padding: 12px;
+    background-color: $color_boton_subir;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    left: 8px;
+    z-index: 100;
+}

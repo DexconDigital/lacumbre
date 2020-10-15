@@ -1,0 +1,107 @@
+// Estructura Basica del menu a partir del punto donde no se comprime
+#menu {
+  .contenedor-img {
+    height: 50px;
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 0;
+    .container-contact {
+      margin-top: -20px;
+      margin-bottom: 10px;
+    }
+    .container-dates {
+      height: 100%;
+      position: relative;
+      width: 80%;
+      .information {
+        padding-bottom: 5px;
+      }
+      .nav-item {
+        margin-left: 15px;
+      }
+    }
+    .navbar-brand {
+      img {
+        margin-top: -30px;
+      }
+    }
+  }
+}
+
+// diseño menu cuando sea transparente
+.bg-transparent {
+  background-color: rgba(0, 0, 0, 0.247) !important;
+  a {
+    color: #fff !important;
+  }
+  .information {
+    color: #fff !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.692) !important;
+  }
+
+  .nav-item.active {
+    a {
+      position: relative;
+      &:before {
+        content: "";
+        background: $white;
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+  }
+  .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.247) !important;
+  }
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    color: $white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.473) !important;
+  }
+}
+
+// diseño de menu cuando no es transparente
+.bg-light {
+  // Colocar aqui diseño
+  a {
+    color: #000;
+  }
+
+  .nav-item.active {
+    position: relative;
+    &:before {
+      content: "";
+      background: $color_principal;
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+  .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+  }
+  .information {
+    border-bottom: 1px solid rgba(29, 29, 29, 0.116);
+  }
+}
+
+.total-menu {
+  -webkit-box-shadow: -1px -1px 5px 0px rgba(102, 102, 102, 1);
+  -moz-box-shadow: -1px -1px 5px 0px rgba(102, 102, 102, 1);
+  box-shadow: -1px -1px 5px 0px rgba(102, 102, 102, 1);
+}
