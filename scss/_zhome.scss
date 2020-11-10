@@ -25,13 +25,13 @@ h6 {
 // p, span {
 //     font-family: "OpenSansOne";
 // }
-.separador-top{
+.separador-top {
   margin-top: 3rem;
-     @include media-breakpoint-up(md){
-      margin-top: -2rem;
+  @include media-breakpoint-up(md) {
+    margin-top: -2rem;
   }
 }
-.separador{
+.separador {
   margin: 3rem 0;
 }
 
@@ -74,45 +74,49 @@ h6 {
   background-color: rgba(160, 17, 38, 0.596);
   padding: 16px 45px 11px 45px;
   margin-left: 0%;
-  @include media-breakpoint-up(md){
+  @include media-breakpoint-up(md) {
     padding: 9px 27px 9px 20px;
     top: 189px;
-  }@include media-breakpoint-up(lg){
+  }
+  @include media-breakpoint-up(lg) {
     padding: 9px 27px 9px 20px;
-    top: 176px
-  }@include media-breakpoint-up(xl){
+    top: 176px;
+  }
+  @include media-breakpoint-up(xl) {
     padding: 9px 27px 9px 20px;
     top: 219px;
-  } 
+  }
 }
-.prmedio{
+.prmedio {
   width: 100%;
   height: 200px;
-  @include media-breakpoint-up(md){
+  @include media-breakpoint-up(md) {
     width: 100%;
-  height: 220px;
-  }@include media-breakpoint-up(lg){
+    height: 220px;
+  }
+  @include media-breakpoint-up(lg) {
     width: 100%;
-  height: 250px;
-  }@include media-breakpoint-up(xl){
+    height: 250px;
+  }
+  @include media-breakpoint-up(xl) {
     width: 100%;
-  height: 250px;
-  } 
+    height: 250px;
+  }
 }
 .icono_inmueble {
   color: #201815;
   margin-left: -20%;
-  @include media-breakpoint-up(md){
+  @include media-breakpoint-up(md) {
     margin-left: -38%;
   }
-  @include media-breakpoint-up(lg){
+  @include media-breakpoint-up(lg) {
     margin-left: -76%;
   }
-  @include media-breakpoint-up(xl){
+  @include media-breakpoint-up(xl) {
     margin-left: -20%;
   }
 }
-.ultimas_noticias{
+.ultimas_noticias {
   margin-left: -5%;
 }
 .page-item.active .page-link {
@@ -120,21 +124,23 @@ h6 {
   color: #fff;
   background-color: #a01127;
   border-color: #a01127;
- }
- #nav .nav-item.active .nav-link:before {
+}
+#nav .nav-item.active .nav-link:before {
   position: absolute;
-    content: "";
-    left: 15px;
-    right: 0;
-    bottom: 0px;
-    width: 6%;
-    height: 2px;
-    background-color: #201815;
+  content: "";
+  left: 15px;
+  right: 0;
+  bottom: 0px;
+  width: 6%;
+  height: 2px;
+  background-color: #201815;
 }
- .pse{
-  height: 100%;object-fit:contain; margin-top: -6px;
+.pse {
+  height: 100%;
+  object-fit: contain;
+  margin-top: -6px;
 }
- .page-link {
+.page-link {
   position: relative;
   display: block;
   padding: 0.5rem 0.75rem;
@@ -142,18 +148,20 @@ h6 {
   line-height: 1.25;
   color: #201815;
   background-color: #fff;
-  border: 1px solid #dee2e6; }
-  .page-link:hover {
-    z-index: 2;
-    color: #a01127;
-    text-decoration: none;
-    background-color: #e9ecef;
-    border-color: #dee2e6; }
-  .page-link:focus {
-    z-index: 2;
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(255, 0, 76, 0.25); 
-  }
+  border: 1px solid #dee2e6;
+}
+.page-link:hover {
+  z-index: 2;
+  color: #a01127;
+  text-decoration: none;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+.page-link:focus {
+  z-index: 2;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 76, 0.25);
+}
 
 .info_inmueble {
   display: flex;
@@ -178,8 +186,8 @@ h6 {
     background-color: rgba(0, 0, 0, 0.7);
   }
   color: #fff;
-  h2{
-      color: #fff;
+  h2 {
+    color: #fff;
   }
 }
 .color_footer {
@@ -262,9 +270,9 @@ a:hover {
 }
 .btn_mapa {
   background-color: #a01127;
-    padding: 2px;
-    color: white;
-    left: 7%;
+  padding: 2px;
+  color: white;
+  left: 7%;
 
   color: white;
 }
@@ -282,78 +290,98 @@ a:hover {
   margin-bottom: 0rem;
 }
 
-.parrafo_inmo{
+.parrafo_inmo {
   text-align: justify;
 }
-.tamaño_direccion{
+.tamaño_direccion {
   font-size: 76%;
 }
-.color_comparit{
+.color_comparit {
   background-color: #a01127;
-  
 }
-.compartir_boton{
+.compartir_boton {
   margin-top: 18px;
-    padding: 3%;
-    margin-left: 31%;
-    @include media-breakpoint-up(md){
-      margin-top: 8px;
-      margin-left: 0%;
+  padding: 3%;
+  margin-left: 31%;
+  @include media-breakpoint-up(md) {
+    margin-top: 8px;
+    margin-left: 0%;
+  }
 }
-    
-    
-}
-.color_blanco_url{
+.color_blanco_url {
   color: white;
   text-transform: uppercase;
   font-size: 14px;
-    @include media-breakpoint-up(md){
-         font-size: 11px;
+  @include media-breakpoint-up(md) {
+    font-size: 11px;
   }
-  
 }
-.color_blanco_url:hover{
+.color_blanco_url:hover {
   color: white;
 }
-.icon_foot{
+.icon_foot {
   font-size: 24px;
-    padding: 0px;
+  padding: 0px;
 }
-.compartir{
+.compartir {
   margin-top: 32px;
-      margin-left: 26px;
-    @include media-breakpoint-up(md){
-      margin-top: 15px;
+  margin-left: 26px;
+  @include media-breakpoint-up(md) {
+    margin-top: 15px;
     margin-left: 65px;
-     }
-     @include media-breakpoint-up(lg){
-      margin-left: 27px;
-     }
+  }
+  @include media-breakpoint-up(lg) {
+    margin-left: 27px;
+  }
 }
-.container_icon_compartir{
+.container_icon_compartir {
   margin-left: 12%;
-    margin-top: -12%;
-    padding: 0px;
-  @include media-breakpoint-up(md){
+  margin-top: -12%;
+  padding: 0px;
+  @include media-breakpoint-up(md) {
     margin-left: 88%;
-      margin-top: -7%;
-      padding: 0px;
-   }
-  
+    margin-top: -7%;
+    padding: 0px;
+  }
 }
-.color_face{
+.tamaño_lonja {
+  width: 50%;
+}
+.cont_logo {
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    text-align: center;
+  }
+  @include media-breakpoint-up(lg) {
+    text-align: inherit;
+  }
+}
+.texto_lonja {
+  font-size: 32px;
+  font-weight: 500;
+  @include media-breakpoint-up(md) {
+    font-weight: 500;
+    font-size: 40px;
+  }
+  @include media-breakpoint-up(lg) {
+    font-weight: 500;
+    font-size: 40px;
+  }
+}
+.color_face {
   color: #0c50a7;
 }
-.color_whapp{
+.color_whapp {
   color: #48c657;
 }
-#carousel_inicio{
-  h2{
+#carousel_inicio {
+  h2 {
     font-size: 235%;
     margin-top: 26%;
   }
-  
-  .carousel-caption{
+
+  .carousel-caption {
     width: 100%;
     height: 100%;
     padding: 0%;
@@ -363,4 +391,3 @@ a:hover {
     background-color: #00000070;
   }
 }
-

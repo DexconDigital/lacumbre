@@ -8,12 +8,12 @@ require 'controllers/noticiasController.php'; ?>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
+
   <?php
   $page = 'Inicio';
   include 'layout/archviosheader.php'; ?>
 </head>
- 
+
 <body>
   <!-- definir estilo menu, true= transparente false= blanco  -->
   <script>
@@ -67,7 +67,7 @@ require 'controllers/noticiasController.php'; ?>
       <?php include 'layout/buscador.php'; ?>
     </section>
     <!-- Propiedades destacadas -->
-      <section id="destacadas" class="wow fadeIn">
+    <section id="destacadas" class="wow fadeIn">
       <div class="container mb-4">
         <div class=" col-md-12 justify-content-center">
           <div class="col-12 text-center mt-3 mb-3">
@@ -89,9 +89,18 @@ require 'controllers/noticiasController.php'; ?>
 
       </div>
     </section>
-    
 
-    
+    <!-- <section class="mt-4 mb-4">
+      <div class="col-12  d-flex flex-wrap">
+        <div class="col-lg-6 col-md-12 col-12 d-flex justify-content-center align-items-center">
+          <h1 class="texto_lonja">Pertenecemos a:</h1>
+        </div>
+        <div class="col-lg-6 col-md-12 col-12 cont_logo">
+          <img src="images/Logo_Lonja-Afiliado.png" class="tamaño_lonja" alt="">
+        </div>
+      </div>
+    </section> -->
+
   </div>
 
   <!-- *****************Footer*********** -->
@@ -103,7 +112,7 @@ require 'controllers/noticiasController.php'; ?>
   <!--  contador -->
   <script src="js/countUp.min.js"></script>
   <script src="js/counter-propertys.js"></script>
-  
+
 
 </body>
 
