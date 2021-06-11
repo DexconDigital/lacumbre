@@ -8662,7 +8662,13 @@ a:hover {
       padding: 0px; } }
 
 .tamaño_lonja {
-  width: 50%; }
+    width: 35%; }
+    @media (min-width: 768px) {
+    .tamaño_lonja {
+    width: 23%; } }
+    @media (min-width: 992px) {
+    .tamaño_lonja {
+    width: 25%; } }
 
 .cont_logo {
   text-align: center; }
@@ -8674,16 +8680,16 @@ a:hover {
       text-align: inherit; } }
 
 .texto_lonja {
-  font-size: 32px;
-  font-weight: 500; }
+  font-size: 28px;
+  font-weight: 400; }
   @media (min-width: 768px) {
     .texto_lonja {
-      font-weight: 500;
-      font-size: 40px; } }
+      font-weight: 400;
+      font-size: 30px; } }
   @media (min-width: 992px) {
     .texto_lonja {
-      font-weight: 500;
-      font-size: 40px; } }
+      font-weight: 400;
+      font-size: 25px; } }
 
 .color_face {
   color: #0c50a7; }
