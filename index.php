@@ -94,7 +94,7 @@ require 'controllers/generalController.php';?>
             <div class="container container-fluid">
                 <div class="row">
                     <div class="col">
-                        <h2 class="font-weight-lighter suzohapp-light-blue text-center py-4">Videos youtube</h2>
+                        <h2 class="font-weight-lighter suzohapp-light-blue text-center py-4">Videos</h2>
                     </div>
                 </div>
                 <div class="row">
