@@ -32,6 +32,9 @@ function modelo_youtube( $r ) {
                     <a href="' . $r[$i]['archivo'] .'" class="light-link">
                         <img src="'.$r[$i]['imagen'].'" class="prmedio" alt="...">
                     </a>
+                    <div class="card-body  border-0 text-center">
+                    '. $r[$i]['nombre'] .'
+                    </div>
                 </div>';
         }
     }
@@ -43,7 +46,7 @@ function modelo_panorama( $r ) {
             echo '
                 <div class="card ancho-card">
                     <a type="button" data-toggle="modal" data-target="#tresd'. $r[$i]['id'] .'" class="d-flex justify-content-center">
-                        <img src="Lacumbre_Admin/admin/fotos/360.png" class="w-50" alt="...">
+                        <img src="Lacumbre_Admin/admin/fotos/360.png" class="w-50 " alt="...">
                     </a>
                     <div class="card-body text-center">
                         '.$r[$i]['nombre'].'
