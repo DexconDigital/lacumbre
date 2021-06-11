@@ -2,7 +2,8 @@
 
 function Conect()
 {
-    $echo = mysqli_connect("localhost","cumbre","cumbre","cumbre");
+    $echo = mysqli_connect("localhost","root","","cumbre");
+    $echo -> set_charset("utf8");
     return $echo;
 }
 
