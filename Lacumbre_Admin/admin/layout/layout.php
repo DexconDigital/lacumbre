@@ -120,7 +120,7 @@ $imagen_inicio = $usuario[10];
 
     <nav class="navbar navbar-expand static-top color_nv">
         <div style="width: 14%;">
-            <a class="navbar-brand mr-1" href="layout.html"><img style="object-fit: contain;width: 100%;height: 100%;" src="images/Logo_Blanco.png" alt=""></a>
+            <a class="navbar-brand mr-1" href="index.php"><img style="object-fit: contain;width: 100%;height: 100%;" src="images/Logo_Blanco.png" alt=""></a>
         </div>
 
 
@@ -162,13 +162,24 @@ $imagen_inicio = $usuario[10];
             <li class="nav-item ">
                 <a class="nav-link " href="./agregar-publicacion.php">
                     <i class="far fa-file colo_ico"></i>
-                    <span>Nueva Publicación</span>
+                    <span>Nueva noticia</span>
                 </a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link" href="lista-publicaciones.php">
                     <i class="fas fa-eye colo_ico"></i>
-                    <span>Ver publicaciones</span></a>
+                    <span>Ver noticias</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="./agregar-general.php">
+                    <i class="far fa-file colo_ico"></i>
+                    <span>Nueva Publicación</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="lista-general.php">
+                    <i class="fas fa-eye colo_ico"></i>
+                    <span>Ver Publicaciones</span></a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link" href="perfil.php">
@@ -176,14 +187,6 @@ $imagen_inicio = $usuario[10];
                     <span>Configuación</span></a>
             </li>
         </ul>
-
-
-
-
-
-
-
-
 
         <!-- Bootstrap core JavaScript-->
         <script src="vendor/jquery/jquery.min.js"></script>
