@@ -2,6 +2,9 @@
 
 function Conect()
 {
-    $echo = mysqli_connect("localhost", "root", "", "dexcondigital_noticias_inmueble");
+    $echo = mysqli_connect("localhost","root","","cumbre");
+    $echo -> set_charset("utf8");
     return $echo;
 }
+
+?>
