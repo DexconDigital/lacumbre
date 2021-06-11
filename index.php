@@ -218,7 +218,7 @@ require 'controllers/generalController.php';?>
                 items: 4,
                 autoWidth: false,
                 center: true,
-                startPosition: 'URLHash',
+                startPosition: 1,
                 responsive: {
                     0: {
                         items: 1,
