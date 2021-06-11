@@ -1,6 +1,7 @@
 <?php require 'variables/variables.php';
 require 'controllers/indexController.php';
-require 'controllers/noticiasController.php'; ?>
+require 'controllers/noticiasController.php';
+require 'controllers/generalController.php';?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -99,21 +100,15 @@ require 'controllers/noticiasController.php'; ?>
                 <div class="row">
                     <div id="related-products-slider-container" class="owl-container col">
                         <div class="owl-carousel owl-theme card-group" id="gallery">
-                            <div class="card ancho-card">
-                                <a href="https://www.youtube.com/watch?v=uMphEiabsL4&t=1s" class="light-link">
-                                    <img src="images/youtube1.jpg" class="" alt="...">
-                                </a>
-                            </div>
-                            <div class="card ancho-card">
-                                <a href="https://www.youtube.com/watch?v=QTU7wEZsPVg&t=6s" class="light-link">
-                                    <img src="images/youtube2.jpg" class="" alt="...">
-                                </a>
-                            </div>
-                            <div class="card ancho-card">
-                                <a href="https://www.youtube.com/watch?v=3nbOehqu6IE" class="light-link">
-                                    <img src="images/youtube3.jpg" class="" alt="...">
-                                </a>
-                            </div>
+                            <?php
+                            if (isset($general_array)) {
+                                modelo_youtube($general_array);
+                                } else {
+                                    echo '<div class="col 12">
+                                            <h3 class="text-center">Muy pronto publicaremos contenido para ti<h3>
+                                        </div>';
+                                }
+                            ?>
                         </div>
                         <div class="owl-theme">
                             <div class="owl-controls d-block">
@@ -134,30 +129,15 @@ require 'controllers/noticiasController.php'; ?>
                 <div class="row">
                     <div id="related-products-slider-container" class="owl-container col">
                         <div class="owl-carousel owl-theme card-group">
-                            <div class="card ancho-card">
-                                <a type="button" data-toggle="modal" data-target="#tresd1" class="d-flex justify-content-center">
-                                    <img src="images/360.png" class="w-50" alt="...">
-                                </a>
-                                <div class="card-body text-center">
-                                    Casa en Parcelación - Las Palmas
-                                </div>
-                            </div>
-                            <div class="card ancho-card">
-                                <a type="button" data-toggle="modal" data-target="#tresd2" class="d-flex justify-content-center">
-                                    <img src="images/360.png" class="w-50" alt="...">
-                                </a>
-                                <div class="card-body text-center">
-                                   Casa Independiente Llano Grande
-                                </div>
-                            </div>
-                            <div class="card ancho-card">
-                                <a type="button" data-toggle="modal" data-target="#tresd3" class="d-flex justify-content-center">
-                                    <img src="images/360.png" class="w-50" alt="...">
-                                </a>
-                                <div class="card-body text-center">
-                                    Parcelación en Llano Grande - Tablazo
-                                </div>
-                            </div>
+                            <?php
+                            if (isset($general_array)) {
+                                modelo_panorama($general_array);
+                                } else {
+                                    echo '<div class="col 12">
+                                            <h3 class="text-center">Muy pronto publicaremos contenido para ti<h3>
+                                        </div>';
+                                }
+                            ?>
                         </div>
                         <div class="owl-theme">
                             <div class="owl-controls d-block">
@@ -206,67 +186,16 @@ require 'controllers/noticiasController.php'; ?>
         </section>
 
     </div>
-
-    <!-- Modal 3d 1-->
-    <div class="modal fade" id="tresd1" tabindex="-1" aria-labelledby="Modal3d1" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Casa en Parcelación - Las Palmas</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <iframe src="https://my.matterport.com/show/?m=AVDGUoTHqds" class="w-100" style="height:40rem"></iframe>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php
+        if (isset($general_array)) {
+            modelo_panorama_modales($general_array);
+            } else {
+                echo '<div class="col 12">
+                        <h3 class="text-center">Muy pronto publicaremos contenido para ti<h3>
+                    </div>';
+            }
+        ?>
     
-    <!-- Modal 3d 2-->
-    <div class="modal fade" id="tresd2" tabindex="-1" aria-labelledby="Modal3d1" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Casa Independiente Llano Grande</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <iframe src="https://my.matterport.com/show/?m=rcDitSjMW4V" class="w-100" style="height:40rem"></iframe>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Modal 3d 3-->
-    <div class="modal fade" id="tresd3" tabindex="-1" aria-labelledby="Modal3d2" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Parcelación en Llano Grande - Tablazo</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <iframe src="https://my.matterport.com/show/?m=cxRaNe5w8GF" class="w-100" style="height:40rem"></iframe>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- *****************Footer*********** -->
     <?php include 'layout/footer.php' ?>
     <!-- *******************Scripts********************* -->
