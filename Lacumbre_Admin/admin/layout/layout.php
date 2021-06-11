@@ -1,10 +1,10 @@
 <?php
 $user = $_SESSION["usuarioactual"];
 $con = Conect();
-$qry = "SELECT * FROM usuarios where usuario ='$user'";
+$qry = "SELECT * FROM usuarios where id_user ='$user'";
 $sql = mysqli_query($con, $qry);
 $usuario =  mysqli_fetch_array($sql);
-$imagen_inicio = $usuario[10];
+$imagen_inicio = $usuario["imagen"];
 ?>
 <!DOCTYPE html>
 <html lang="es">
