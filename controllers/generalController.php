@@ -30,7 +30,7 @@ function modelo_youtube( $r ) {
             echo '
                 <div class="card ancho-card">
                     <a href="' . $r[$i]['archivo'] .'" class="light-link">
-                        <img src="'.$r[$i]['imagen'].'" class="prmedio" alt="...">
+                        <img src="'.$r[$i]['imagen'].'" class="" alt="...">
                     </a>
                     <div class="card-body  border-0 text-center">
                     '. $r[$i]['nombre'] .'
