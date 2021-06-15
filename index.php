@@ -120,7 +120,7 @@ require 'controllers/generalController.php';?>
             </div>
         </section>
         
-        <section class="buscador">
+        <section class="buscador pb-4">
             <div class="container container-fluid">
                 <div class="row">
                     <div class="col">
