@@ -88,37 +88,8 @@ require 'controllers/generalController.php';?>
         <!-- Buscador -->
         <section class="buscador">
             <?php include 'layout/buscador.php'; ?>
-        </section>
-
-        <section>
-            <div class="container container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <h2 class="font-weight-lighter suzohapp-light-blue text-center py-4">Videos</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div id="related-products-slider-container" class="owl-container col">
-                        <div class="owl-carousel owl-theme card-group" id="gallery">
-                            <?php
-                            if (isset($general_array)) {
-                                modelo_youtube($general_array);
-                                } else {
-                                    echo '<div class="col 12">
-                                            <h3 class="text-center">Muy pronto publicaremos contenido para ti<h3>
-                                        </div>';
-                                }
-                            ?>
-                        </div>
-                        <div class="owl-theme">
-                            <div class="owl-controls d-block">
-                                <div class="custom-nav owl-nav"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </section>        
+        
         <section>
             <div class="container container-fluid">
                 <div class="row">
@@ -148,7 +119,36 @@ require 'controllers/generalController.php';?>
                 </div>
             </div>
         </section>
-
+        
+        <section class="buscador">
+            <div class="container container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="font-weight-lighter suzohapp-light-blue text-center py-4 text-light">Videos</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="related-products-slider-container" class="owl-container col">
+                        <div class="owl-carousel owl-theme card-group" id="gallery">
+                            <?php
+                            if (isset($general_array)) {
+                                modelo_youtube($general_array);
+                                } else {
+                                    echo '<div class="col 12">
+                                            <h3 class="text-center">Muy pronto publicaremos contenido para ti<h3>
+                                        </div>';
+                                }
+                            ?>
+                        </div>
+                        <div class="owl-theme">
+                            <div class="owl-controls d-block">
+                                <div class="custom-nav owl-nav"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Propiedades destacadas -->
         <section id="destacadas" class="wow fadeIn">
