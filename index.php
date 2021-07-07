@@ -189,10 +189,6 @@ require 'controllers/generalController.php';?>
     <?php
         if (isset($general_array)) {
             modelo_panorama_modales($general_array);
-            } else {
-                echo '<div class="col 12">
-                        <h3 class="text-center">Muy pronto publicaremos contenido para ti<h3>
-                    </div>';
             }
         ?>
     
@@ -215,7 +211,6 @@ require 'controllers/generalController.php';?>
                 loop: false,
                 margin: 20,
                 dots: true,
-                items: 4,
                 autoWidth: false,
                 center: true,
                 startPosition: 1,
@@ -223,6 +218,7 @@ require 'controllers/generalController.php';?>
                 autoplayTimeout: 8000,
                 navigation: true,
                 rewind: true,
+                autoplayHoverPause:false,
                 responsive: {
                     0: {
                         items: 1,
