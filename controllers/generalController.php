@@ -45,8 +45,8 @@ function modelo_panorama( $r ) {
         if ( $r[$i]['tipo'] == "panorama" ) {
             echo '
                 <div class="card ancho-card">
-                    <a type="button" data-toggle="modal" data-target="#tresd'. $r[$i]['id'] .'" class="d-flex justify-content-center">
-                        <img src="Lacumbre_Admin/admin/fotos/360.png" class="w-50 " alt="...">
+                    <a href="' . $r[$i]['archivo'] .'" type="button" data-toggle="modal" data-target="#tresd'. $r[$i]['id'] .'" class="d-flex justify-content-center">
+                        <img src="'.$r[$i]['imagen'].'" class="w-50" alt="...">
                     </a>
                     <div class="card-body text-center">
                         '.$r[$i]['nombre'].'
