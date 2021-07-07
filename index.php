@@ -44,20 +44,20 @@ require 'controllers/generalController.php';?>
                         <!--<img src="images/Banner_Navidad.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">-->
-                        <img src="images/Banner_1.jpg" class="d-block w-100" alt="...">
+                        <img src="images/Banner_1.jpg" class="d-block w-100 ft-5" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h2>En La Cumbre, Trabajamos para encontrar tu inmueble ideal</h2>
                         </div>
                     </div>
                     <div class="carousel-item ">
-                        <img src="images/Banner_2.jpg" class="d-block w-100" alt="...">
+                        <img src="images/Banner_2.jpg" class="d-block w-100 ft-5" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h2>Más de 13 años acompañando y creando relaciones <br> con nuestros clientes</h2>
 
                         </div>
                     </div>
                     <div class="carousel-item ">
-                        <img src="images/Banner_3.jpg" class="d-block w-100" alt="...">
+                        <img src="images/Banner_3.jpg" class="d-block w-100 ft-5" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h2>Generamos tranquilidad, confianza y seguridad</h2>
                         </div>
@@ -219,6 +219,10 @@ require 'controllers/generalController.php';?>
                 autoWidth: false,
                 center: true,
                 startPosition: 1,
+                autoplay: true,
+                autoplayTimeout: 8000,
+                navigation: true,
+                rewind: true,
                 responsive: {
                     0: {
                         items: 1,
