@@ -30,7 +30,7 @@ function modelo_youtube( $r ) {
             echo '
                 <div class="card ancho-card">
                     <a href="' . $r[$i]['archivo'] .'" class="light-link">
-                        <img src="'.$r[$i]['imagen'].'" class="" alt="...">
+                        <img src="'.$r[$i]['imagen'].'" class="card-img-top" alt="..." style="height:10rem;object-fit:fill;" alt="...">
                     </a>
                     <div class="card-body  border-0 text-center">
                     '. $r[$i]['nombre'] .'
@@ -44,9 +44,9 @@ function modelo_panorama( $r ) {
     for ( $i = 0; $i < count( $r ); $i++ ) {
         if ( $r[$i]['tipo'] == "panorama" ) {
             echo '
-                <div class="card ancho-card">
+                <div class="card ancho-card" style="height:15rem;">
                     <a href="' . $r[$i]['archivo'] .'" type="button" data-toggle="modal" data-target="#tresd'. $r[$i]['id'] .'" class="d-flex justify-content-center">
-                        <img src="'.$r[$i]['imagen'].'" class="w-50" alt="...">
+                        <img src="'.$r[$i]['imagen'].'" class="card-img-top" alt="..." style="height:10rem;object-fit: scale-down;">
                     </a>
                     <div class="card-body text-center">
                         '.$r[$i]['nombre'].'
