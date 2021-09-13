@@ -55,12 +55,12 @@
                             class="fas fa-map-marker-alt m-2"></i><?php echo $datos_contacto['direccion']['direccion'] ?></small>
                     <small><a href="mailto:<?php echo $datos_contacto['correo']['correo'] ?>"><i
                                 class="far fa-envelope m-2"></i><?php echo $datos_contacto['correo']['correo'] ?></a></small>
-                    <small class="float-right"><a href="tel:<?php echo $datos_contacto['celular']['link'] ?>"><i
+                    <small class="ml-5"><a href="tel:<?php echo $datos_contacto['celular']['link'] ?>"><i
                                 class="fas fa-mobile-alt m-2"></i><?php echo $datos_contacto['celular']['imprimir'] ?></a>
                     </small>
-                    <small class="float-right"><a href="tel:<?php echo $datos_contacto['telefono_fijo']['link'] ?>"><i
+                    <small class=""><a href="tel:<?php echo $datos_contacto['telefono_fijo']['link'] ?>"><i
                                 class="fas fa-phone-alt m-2 colo_insta"></i><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?></a></small>
-                    <small class="float-right"><a target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>"><i
+                    <small class=""><a target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>"><i
                                 class="fab fa-whatsapp m-2 color_twi"></i><?php echo $datos_contacto['whatsapp']['imprimir'] ?></a></small>
                 </div>
             </div>
