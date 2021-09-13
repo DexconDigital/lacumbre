@@ -215,7 +215,7 @@ require 'controllers/generalController.php';?>
                 center: true,
                 startPosition: 1,
                 autoplay: true,
-                autoplayTimeout: 8000,
+                autoplayTimeout: 4000,
                 navigation: true,
                 rewind: true,
                 autoplayHoverPause:false,
