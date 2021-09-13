@@ -26,15 +26,19 @@ require 'controllers/noticiasController.php'; ?>
     <!-- **************************Contenido ********************************** -->
     <div class="container-fluid body">
 
-        <section class="separador-top wow fadeIn" data-wow-duration="2s">
-            <div id="texto" class=" container col-md-12">
-                <div class="row col-md-12 ">
-                    <div class="col-lg-6 col-md-6  contendor_descrip">
-                        <h1> La Cumbre Inmobiliaria</h1>
-                        <p><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][0]  ?> </p>
-                        <p><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][1]  ?> </p>
+        <section id="servicios" class="separador wow fadeIn" data-wow-duration="2s">
+            <div id="mision" class="container">
+                <div class="col-md-12 row mb-4">
+                    <div class="col-lg-8 col-md-7  magen_container_servi">
+                        <div class="col-md-12  text-center">
+                            <h1 class="color_servi gruesor_letra">La Cumbre Inmobiliaria</h1>
+                        </div>
+                        <div class="col-md-12 ">
+                            <p><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][0]  ?> </p>
+                            <p><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][1]  ?> </p>
+                        </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 ">
+                    <div class="col-lg-4 col-md-5 row">
                         <img class="quienes_img" src="images/Logo.png" alt="">
                     </div>
                 </div>
@@ -117,10 +121,8 @@ require 'controllers/noticiasController.php'; ?>
                 <div class="col-md-12">
                     <h1 class="text-center"> Nuestros servicios</h1>
                 </div>
-
                 <div class="">
                     <div class="container  contenedor_banner">
-
                         <div class="row d-flex justify-content-between " id="cont_servi">
                             <div class="espacio_div col-xl-6 col-md-6 col-12 text-center color_estadis">
                                 <div>
@@ -141,17 +143,11 @@ require 'controllers/noticiasController.php'; ?>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </section>
-
-
     </div>
-    </div>
-
     <!-- *****************Footer*********** -->
     <?php include 'layout/footer.php' ?>
 
