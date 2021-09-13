@@ -11789,9 +11789,6 @@ input[type]:focus {
         margin-left: 15px;
     }
 
-    #menu .navbar-brand img {
-        margin-top: -30px;
-    }
 }
 
 .bg-transparent {
@@ -12563,7 +12560,17 @@ a:hover {
     .quienes_img {
         -o-object-fit: contain;
         object-fit: contain;
-        width: 76%;
+        width: 300px;
+        height: 92%;
+        margin-left: 11%;
+    }
+}
+
+@media (max-width: 768px) {
+    .quienes_img {
+        -o-object-fit: contain;
+        object-fit: contain;
+        width: 70%;
         height: 92%;
         margin-left: 11%;
     }
