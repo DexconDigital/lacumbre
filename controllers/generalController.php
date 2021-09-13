@@ -43,10 +43,12 @@ function modelo_youtube( $r ) {
 function modelo_panorama( $r ) {
     for ( $i = 0; $i < count( $r ); $i++ ) {
         if ( $r[$i]['tipo'] == "panorama" ) {
+            $marca = ($r[$i]['imagen'] != "Lacumbre_Admin/admin/fotos/360.png") ? '<img src="Lacumbre_Admin/admin/fotos/360_white.png" style="position:absolute;height:9rem;object-fit: scale-down;filter:drop-shadow(1px 1px 2px black);">' : "";
             echo '
                 <div class="card ancho-card" style="height:15rem;">
-                    <a href="' . $r[$i]['archivo'] .'" type="button" data-toggle="modal" data-target="#tresd'. $r[$i]['id'] .'" class="d-flex justify-content-center">
+                    <a href="' . $r[$i]['archivo'] .'" type="button" data-toggle="modal" data-target="#tresd'. $r[$i]['id'] .'" class="d-flex justify-content-center align-items-center">
                         <img src="'.$r[$i]['imagen'].'" class="card-img-top" alt="..." style="height:10rem;object-fit: scale-down;">
+                        ' . $marca . '
                     </a>
                     <div class="card-body text-center">
                         '.$r[$i]['nombre'].'
