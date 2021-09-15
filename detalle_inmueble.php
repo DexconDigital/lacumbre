@@ -112,19 +112,27 @@ require 'controllers/noticiasController.php'; ?>
                             </div>
 
                         </div>
-
                         <!-- script para iniciar el caousel -->
-                       
-
                         <!-- descripcion -->
                         <div class="col-md-12 mt-4" style="margin-bottom: 12px;">
-                            <h4 class="property-single-detail-title"><strong>Características</strong></h4>
+                            <div class="d-flex justify-content-between property-single-detail-title">
+                                <h4 class=""><strong>Características</strong></h4>
+                                <div>
+                                    <?php
+                                        if ($video360 != "") { ?>
+                                        <a class="btn color_comparit text-light rounded-0" type="button" data-toggle="modal" data-target="#video360">Ver 360</a>
+                                     <?php } 
+                                        if ($video != "") { ?>
+                                        <a class="btn color_comparit text-light rounded-0" type="button" data-toggle="modal" data-target="#video">Ver Video</a>
+                                     <?php } ?>
+                                </div>
+                            </div>
                             <ul class="pl-4">
                                 <li>Código: <?php echo $co; ?></li>
                                 <li>Alcobas: <?php echo $alcobas; ?></li>
                                 <li>Baños: <?php echo $banios; ?></li>
-                                <li>Área Construida: <?php echo $area_construida; ?>m<sup>2<sup></li>
-                                <li>Área Privada: <?php echo $area_privada; ?>m<sup>2<sup></li>
+                                <li>Área Construida: <?php echo $area_construida; ?>m<sup>2</sup></li>
+                                <li>Área Privada: <?php echo $area_privada; ?>m<sup>2</sup></li>
                                 <li>Garaje: <?php echo $garaje; ?></li>
                                 <li>Estrato: <?php echo $estrato; ?></li>
                                 <li>Edad Inmueble: <?php echo $edad_inmueble; ?> años</li>
@@ -237,12 +245,56 @@ require 'controllers/noticiasController.php'; ?>
                
                     </div>
                  </div>
+            </div>
         </section>
-
-
-
     </div>
 
+    <?php
+    if ($video360 != "") {
+        echo '
+        <!-- Modal Video 360-->
+        <div class="modal fade" id="video360" tabindex="-1" aria-labelledby="video360" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="video360">Video 360</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="'.$video360.'" class="w-100" style="height:40rem"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>';
+    }
+    if ($video != "") {
+        echo '
+        <!-- Modal Video-->
+        <div class="modal fade" id="video" tabindex="-1" aria-labelledby="video" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="video">Video</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="'.$video.'" class="w-100" style="height:40rem"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>';
+    }
+    ?>
     <!-- *****************Footer*********** -->
     <?php include 'layout/footer.php' ?>
 

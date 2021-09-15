@@ -1,7 +1,8 @@
 <?php require 'variables/variables.php';
 require 'controllers/indexController.php';
 require 'controllers/noticiasController.php';
-require 'controllers/generalController.php';?>
+require 'controllers/generalController.php';
+require 'controllers/indexDB.php';?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -40,40 +41,20 @@ require 'controllers/generalController.php';?>
         <section id="carousel_inicio">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <!--<img src="images/Banner_Navidad.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">-->
-                        <img src="images/Banner_1.jpg" class="d-block w-100 ft-5" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>En La Cumbre, Trabajamos para encontrar tu inmueble ideal</h2>
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <img src="images/Banner_2.jpg" class="d-block w-100 ft-5" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>Más de 13 años acompañando y creando relaciones <br> con nuestros clientes</h2>
-
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <img src="images/Banner_3.jpg" class="d-block w-100 ft-5" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>Generamos tranquilidad, confianza y seguridad</h2>
-                        </div>
-                    </div>
-                    <!-- <div class="carousel-item ">
-            <img src="images/Banner_4.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item ">
-            <img src="images/Banner_5.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item ">
-            <img src="images/Banner_6.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item ">
-            <img src="images/Banner_7.jpg" class="d-block w-100" alt="...">
-          </div> -->
+                    <?php
+                        foreach  ($resultado as $key => $res) {
+                            $active = ($key == 0) ? "active" : "";
+                            $href = ($res["2"] != "") ? 'href="' . $res["2"] . '" target="_blank"' : "";
+                            echo '
+                                <a ' . $href . ' class="carousel-item ' . $active . '">
+                                    <img  class="d-block w-100 brillo-5" src="Lacumbre_Admin/admin/' . $res["1"] . '"/>
+                                    <div class="carousel-content container">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h2>' . $res['3'] . '</h2>
+                                        </div>
+                                    </div>
+                                </a>';
+                        } ?>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
