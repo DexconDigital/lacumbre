@@ -5,6 +5,7 @@ $qry = "SELECT * FROM usuarios where id_user ='$user'";
 $sql = mysqli_query($con, $qry);
 $usuario =  mysqli_fetch_array($sql);
 $imagen_inicio = $usuario["imagen"];
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -116,7 +117,7 @@ $imagen_inicio = $usuario["imagen"];
         <div id="content-wrapper" style="background:#c8cfda21;">
     -->
 
-<body id="page-top">
+<body>
 
     <nav class="navbar navbar-expand static-top color_nv">
         <div style="width: 14%;">
@@ -180,6 +181,16 @@ $imagen_inicio = $usuario["imagen"];
                 <a class="nav-link" href="lista-general.php">
                     <i class="fas fa-eye colo_ico"></i>
                     <span>Ver Publicaciones</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="agregar-imagen.php">
+                    <i class="fas fa-image"></i>
+                    <span>Agregar Imagenes</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="lista-imagenes.php">
+                    <i class="far fa-images"></i>
+                    <span>Ver Imagenes</span></a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link" href="perfil.php">
