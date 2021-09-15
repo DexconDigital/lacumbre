@@ -1,5 +1,9 @@
 <i class="fas fa-angle-double-up subir"></i>
-
+<div class="whatsapp">
+    <a href="https://api.whatsapp.com/send?phone=<?php echo $datos_contacto['whatsapp']['link'] ?>&amp;" target="_blank" rel="noreferrer">
+        <i class="fab fa-whatsapp whatsapp-icono"></i>
+    </a>
+</div>
 <footer class="color_footer" id="footer">
     <div class="container">
         <div class="col-12 justify-content-center">
@@ -17,12 +21,12 @@
                 <div class="col-md-4 col-12 col-lg-4 mb-2">
                     <h3 class="title-footer">Últimas Noticias</h3>
                     <?php if (isset($noticias_array)) {
-                        modelo_ultima_noticia($noticias_array);
-                    } else {
-                        echo '<div class="col 12">
+                    modelo_ultima_noticia($noticias_array);
+                } else {
+                    echo '<div class="col 12">
                         <p class="text-justify">Muy pronto publicaremos contenido nuevo para ti.<p>
                         </div>';
-                    } ?>
+                } ?>
 
                 </div>
 
