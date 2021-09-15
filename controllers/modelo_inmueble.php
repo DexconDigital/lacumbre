@@ -29,7 +29,8 @@ function modelo_inmueble_destacadas($r, $cantidad_inmuebles)
         $edad_inmueble = $api['EdadInmueble'];
         $estrato = $api['Estrato'];
         $venta = $api['Venta'];
-
+        $video360 = ($api['video360'] != "") ? '<img src="Lacumbre_Admin/admin/fotos/360_white.png" class="m-1" width="36px" />' : "";
+        $fondo = ($video360 != "") ? "icono_inmuble_video" : "";
         echo
             '
             <div class="col-lg-4 col-md-6 col-12 mb-3">
@@ -37,6 +38,10 @@ function modelo_inmueble_destacadas($r, $cantidad_inmuebles)
             <a href="./detalle_inmueble.php?co=' . $codigo . '">
                 <img src="' . $imagen . '" class="prmedio" alt="...">
                 </a>
+                <span class="'. $fondo .' d-flex justify-content-center align-items-center">
+                    ' . $video360 . '
+                </span>
+                <span class="icono_inmuble"></span>
                 <span class="precio_inmueble">' . $precio . '</span>
                 <div class="card-body">
                     <div class="col-md-12 row">
@@ -118,13 +123,17 @@ function modelo_inmueble_listar($r)
         $edad_inmueble = $api['EdadInmueble'];
         $estrato = $api['Estrato'];
         $venta = $api['Venta'];
-
+        $video360 = ($api['video360'] != "") ? '<img src="Lacumbre_Admin/admin/fotos/360_white.png" class="m-1" width="36px" />' : "";
+        $fondo = ($video360 != "") ? "icono_inmuble_video" : "";
         echo
             '<div class="col-lg-4 col-md-6 col-12 ">
              <div class="card mb-4" style="">
-             <a href="detalle_inmueble.php?co='.$codigo.'">
-                <img src="' . $imagen . '" class="prmedio" alt="...">
+                <a href="detalle_inmueble.php?co='.$codigo.'">
+                    <img src="' . $imagen . '" class="prmedio" alt="...">
                 </a>
+                <span class="'. $fondo .' d-flex justify-content-center align-items-center">
+                    ' . $video360 . '
+                </span>
                 <span class="precio_inmueble">' . $precio . '</span>
                 <div class="card-body">
                     <div class="col-md-12 row">

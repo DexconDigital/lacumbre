@@ -36,8 +36,8 @@ $ciudad = $r['ciudad'];
 $descripcion = $r['descripcionlarga'];
 $garaje = $r['garaje'];
 $asesor = $r['asesor'][0];
-
-
+$video360 = $r['video360'];
+$video = $r['video'];
 function precio_validar($r){
     if($r['Gestion'] == 'Arriendo'){
         echo '$'.$r['ValorCanon'];
