@@ -12880,3 +12880,32 @@ a:hover {
 .conte_copy a {
     color: #e92e4b !important;
 }
+
+.whatsapp-icono {
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.6em;
+    font-size: 1.8em;
+    background-color: #25D366;
+    color: white;
+
+}
+
+.whatsapp {
+    margin-left: 8px;
+    bottom: 20px;
+    position: fixed;
+    z-index: 1;
+}
+
+.icono_inmuble_video {
+    position: absolute;
+    font-size: 23px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(160, 17, 38, 0.596);
+}
+
+.brillo-5 {
+    filter: brightness(0.5);
+}
