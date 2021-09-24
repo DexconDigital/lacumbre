@@ -42,9 +42,9 @@ require 'controllers/indexDB.php';?>
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <?php
-                        foreach  ($resultado as $key => $res) {
-                            $active = ($key == 0) ? "active" : "";
-                            $href = ($res["2"] != "") ? 'href="' . $res["2"] . '" target="_blank"' : "";
+                        while ( $res = mysqli_fetch_array( $sql ) ) {
+                            $active = ($res[0] == 1) ? "active" : "";
+                            $href = ($res[2] != "") ? 'href="' . $res[2] . '" target="_blank"' : "";
                             echo '
                                 <a ' . $href . ' class="carousel-item ' . $active . '">
                                     <img  class="d-block w-100 brillo-5" src="Lacumbre_Admin/admin/' . $res["1"] . '"/>
