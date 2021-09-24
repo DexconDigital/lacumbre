@@ -5,4 +5,3 @@ require_once("conexion.php");
 $con = Conect();
 $qry = "SELECT * FROM slide_inicio where id_inmobiliaria5 = '10'";
 $sql = mysqli_query($con,$qry);
-$resultado =  mysqli_fetch_all($sql);
